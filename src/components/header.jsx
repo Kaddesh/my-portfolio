@@ -17,7 +17,7 @@ const Header = () => {
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
-    const offset = 150;
+    const offset = 120;
     const top = section.getBoundingClientRect().top + window.pageYOffset - offset;
   
     window.scrollTo({

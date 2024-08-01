@@ -54,7 +54,7 @@ export default function Contact() {
       <div className="lg:px-20">
         <AnimateInView initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <div className="flex flex-col lg:items-center lg:justify-between">
-            <h2 className='text-xl xl:text-3xl '>Need more info?</h2>
+            <h1 className='text-2xl xl:text-3xl '>Need more info?</h1>
             <h1 className='text-xl xl:text-2xl mt-5 text-[#ADEFD1FF]'>Contact me!</h1>
           </div>
         </AnimateInView>

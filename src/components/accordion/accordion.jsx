@@ -40,7 +40,7 @@ const FAQAccordion = () => {
   return (
     <section id="section5" className="relative mt-40 mx-10 lg:ml-40 lg:mr-20">
       <AnimateInView>
-      <h1 className=" text-xl xl:text-3xl">Potential Questions Answered</h1>
+      <h1 className=" text-2xl xl:text-3xl">Potential Questions Answered</h1>
       {faqs.map((faq, index) => (
         <div key={index} className="relative mb-3 mt-10">
           <FaArrowsToDot className='text-[#ADEFD1FF] size-6 mb-5' />

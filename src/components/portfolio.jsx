@@ -41,7 +41,7 @@ const portfolioItems = [
 export default function Portfolio() {
   return (
     <section id="section4" className="flex flex-col  mt-40 lg:mt-60 lg:mx-20 mx-10 xl:ml-40 xl:mr-20 ">
-      <h1 className=' lg:text-xl xl:text-3xl'>Check Some Projects</h1>
+      <h1 className=' text-2xl xl:text-3xl'>Check Some Projects</h1>
       <div className=''>
       {portfolioItems.map((item, index) => (
         <ProjectCard

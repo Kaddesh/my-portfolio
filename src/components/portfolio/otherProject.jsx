@@ -37,7 +37,7 @@ const otherItems = [
 export default function OtherProjects() {
   return (
     <div className=' lg:mr-20 mt-20 lg:mt-0'>
-      <h2 className='  text-xl xl:text-3xl lg:text-center'>Also Check...</h2>
+      <h2 className='  text-2xl xl:text-3xl lg:text-center'>Also Check...</h2>
       <h3 className='text-[#ADEFD1FF] lg:text-center mt-6'>View Repository</h3>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 pt-10">
         {otherItems.map((item, index) => (

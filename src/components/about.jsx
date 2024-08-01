@@ -9,7 +9,7 @@ const About = () => {
     <section id="section2" className=" lg:text-center  lg:mt-20 xl:pr-20 mx-10 lg:px-20 xl:pl-40" data-section="about">
       <AnimateInView initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
           <div >
-            <h1 className=" text-xl xl:text-3xl lg:text-end lg:pr-80 lg:pl-10">Who Am I?</h1>
+            <h1 className=" text-2xl xl:text-3xl lg:text-end lg:pr-80 lg:pl-10">Who Am I?</h1>
             <div className="grid  xl:grid-cols-2  pt-10 lg:pt-20 gap-10">
 
               <div className="spiral-border lg:h-[450px] lg:w-[450px] order-2 xl:order-1 mx-auto xl:my-auto ">
