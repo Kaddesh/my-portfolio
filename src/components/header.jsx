@@ -30,7 +30,7 @@ const Header = () => {
           <button
             id="open-button"
             onClick={toggleNav}
-            className="text-white hover:text-black ml-10 bg-none hover:bg-[#ADEFD1FF]"
+            className="text-white hover:text-black lg:ml-10 bg-none hover:bg-[#ADEFD1FF]"
           >
             <HiOutlineMenuAlt1 size={30} className="" />
           </button>

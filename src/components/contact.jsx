@@ -67,7 +67,7 @@ export default function Contact() {
               </div>
               <div className='block space-y-1 pl-5 text-2xl'>
                 <h3>My Address</h3>
-                <p>17 Akobo Ibadan, Nigeria</p>
+                <p className='text-sm'>17 Akobo Ibadan, Nigeria</p>
               </div>
             </div>
           </AnimateInView>
@@ -80,7 +80,7 @@ export default function Contact() {
                 </div>
                 <div className='block space-y-1 pl-5 text-2xl'>
                   <h3>Social Profiles</h3>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 text-sm">
                   <a
               href="https://x.com/KKaddesh?t=HVQ50nIp6-NF94K9pQyW8g&s=09"
               className="twitter"
@@ -119,7 +119,7 @@ export default function Contact() {
               </div>
               <div className='block space-y-1 pl-5'>
                 <h3>Email Me</h3>
-                <p className=''>oludamolaijimade@gmail.com</p>
+                <p className='text-sm'>oludamolaijimade@gmail.com</p>
               </div>
             </div>
           </AnimateInView>
@@ -131,7 +131,7 @@ export default function Contact() {
               </div>
               <div className='block space-y-1 pl-5 text-2xl'>
                 <h3>Call Me</h3>
-                <p>+2348068453717</p>
+                <p className='text-sm'>+2348068453717</p>
               </div>
             </div>
           </AnimateInView>
