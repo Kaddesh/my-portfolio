@@ -50,7 +50,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="section6" className=" px-5 lg:mb-20 mt-40 lg:mt-60 text-[#A8B2D1]">
+    <section id="section6" className=" mx-5 lg:mb-20 mt-40 lg:mt-60 text-[#A8B2D1]">
       <div className="lg:px-20">
         <AnimateInView initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <div className="flex flex-col lg:items-center lg:justify-between">
@@ -65,7 +65,7 @@ export default function Contact() {
               <div className='w-12 lg:w-16 h-12 lg:h-16 rounded-[50%] bg-[rgba(255,255,255,0.08)] flex items-center justify-center'>
                 <FaLocationDot className="text-[#ADEFD1FF] hover:text-[#42EADDFF]"/>
               </div>
-              <div className='block space-y-1 pl-10 text-2xl'>
+              <div className='block space-y-1 pl-5 text-2xl'>
                 <h3>My Address</h3>
                 <p>17 Akobo Ibadan, Nigeria</p>
               </div>
@@ -78,7 +78,7 @@ export default function Contact() {
                 <div className='w-12 lg:w-16 h-12 lg:h-16 rounded-[50%] bg-[rgba(255,255,255,0.08)] flex items-center justify-center'>
                   <FaShareAlt className="text-[#ADEFD1FF] hover:text-[#42EADDFF]" />
                 </div>
-                <div className='block space-y-1 pl-10 text-2xl'>
+                <div className='block space-y-1 pl-5 text-2xl'>
                   <h3>Social Profiles</h3>
                   <div className="flex gap-2">
                   <a
@@ -117,9 +117,9 @@ export default function Contact() {
               <div className='w-12 lg:w-16 h-12 lg:h-16 rounded-[50%] bg-[rgba(255,255,255,0.08)] flex items-center justify-center'>
                 <MdOutlineEmail className="text-[#ADEFD1FF] hover:text-[#42EADDFF]" />
               </div>
-              <div className='block space-y-1 pl-10'>
+              <div className='block space-y-1 pl-5'>
                 <h3>Email Me</h3>
-                <p>oludamolaijimade@gmail.com</p>
+                <p className=''>oludamolaijimade@gmail.com</p>
               </div>
             </div>
           </AnimateInView>
@@ -129,7 +129,7 @@ export default function Contact() {
               <div className='w-12 lg:w-16 h-12 lg:h-16 rounded-full bg-[rgba(255,255,255,0.08)] flex items-center justify-center'>
                 <FiPhoneCall className="text-[#ADEFD1FF] hover:text-[#42EADDFF]" />
               </div>
-              <div className='block space-y-1 pl-10 text-2xl'>
+              <div className='block space-y-1 pl-5 text-2xl'>
                 <h3>Call Me</h3>
                 <p>+2348068453717</p>
               </div>
