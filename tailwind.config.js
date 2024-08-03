@@ -5,10 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        //inter: ["inter", "sans-serif"],
-        sans: ['Roboto', 'sans-serif'],
-      },
+     
       spacing: {
         '16': '4rem',
       },

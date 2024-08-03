@@ -42,6 +42,12 @@ export default function Contact() {
         .then((result) => {
           console.log(result.text);
           setIsSubmitted(true);
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
           setFormErrors({});
         }, (error) => {
           console.log(error.text);
@@ -60,7 +66,7 @@ export default function Contact() {
         </AnimateInView>
 
         <div className="grid lg:grid-cols-2 items-center gap-10 mt-10">
-          <AnimateInView initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
+          <AnimateInView transition={{ duration: 0.6 }}>
             <div className="flex items-center text-lg px-5 py-2 lg:p-5 w-full bg-[rgba(255,255,255,0.08)]">
               <div className='w-12 lg:w-16 h-12 lg:h-16 rounded-[50%] bg-[rgba(255,255,255,0.08)] flex items-center justify-center'>
                 <FaLocationDot className="text-[#ADEFD1FF] hover:text-[#42EADDFF]"/>
@@ -112,7 +118,7 @@ export default function Contact() {
             </div>
           </AnimateInView>
 
-          <AnimateInView initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
+          <AnimateInView transition={{ duration: 0.6 }}>
             <div className="flex items-center text-lg px-5 py-2 lg:p-5 w-full bg-[rgba(255,255,255,0.08)]">
               <div className='w-12 lg:w-16 h-12 lg:h-16 rounded-[50%] bg-[rgba(255,255,255,0.08)] flex items-center justify-center'>
                 <MdOutlineEmail className="text-[#ADEFD1FF] hover:text-[#42EADDFF]" />
@@ -137,16 +143,16 @@ export default function Contact() {
           </AnimateInView>
         </div>
 
-        <AnimateInView initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+        
           <div className='bg-[rgba(255,255,255,0.08)] mt-10'>
             <form className="lg:px-10" onSubmit={handleSubmit}>
               <div className="grid lg:grid-cols-2 w-full gap-2 lg:gap-10">
-                <div className="col-md-6 form-group">
+                <div className="col-md-6 ">
                   
                     <input
                       type="text"
                       name="name"
-                      className="w-full text-lg px-5 py-4 bg-[rgba(255,255,255,0.08)] outline-none"
+                      className="w-full py-4 px-5 custom-bg outline-none focus:custom-bg focus:outline-none"
                       id="name"
                       placeholder="Your Name"
                       value={formData.name}
@@ -156,11 +162,11 @@ export default function Contact() {
                     {formErrors.name && <span className="text-red-500">{formErrors.name._errors[0]}</span>}
                  
                 </div>
-                <div className="col-md-6 form-group  ">
+                <div className="col-md-6   ">
                  
                     <input
                       type="email"
-                      className="w-full text-lg px-5 py-4 bg-[rgba(255,255,255,0.08)] outline-none"
+                      className="w-full py-4 px-5 custom-bg outline-none focus:custom-bg focus:outline-none"
                       name="email"
                       id="email"
                       placeholder="Your Email"
@@ -172,11 +178,11 @@ export default function Contact() {
                 
                 </div>
               </div>
-              <div className="form-group mt-2 lg:mt-3">
+              <div className=" mt-2 lg:mt-3">
                
                   <input
                     type="text"
-                    className="w-full text-lg px-5 py-4 bg-[rgba(255,255,255,0.08)] outline-none"
+                    className="w-full py-4 px-5 custom-bg outline-none focus:custom-bg focus:outline-none"
                     name="subject"
                     id="subject"
                     placeholder="Subject"
@@ -187,10 +193,10 @@ export default function Contact() {
                   {formErrors.subject && <span className="text-red-500">{formErrors.subject._errors[0]}</span>}
                
               </div>
-              <div className="form-group mt-3">
+              <div className=" mt-3">
                
                   <textarea
-                    className="w-full py-4 px-5 bg-[rgba(255,255,255,0.08)] outline-none"
+                    className="w-full text-white py-4 px-5 custom-bg outline-none focus:custom-bg focus:outline-none"
                     name="message"
                     rows="10"
                     placeholder="Message"
@@ -202,14 +208,14 @@ export default function Contact() {
 
               </div>
               <div className="text-center">
-                <button type="submit" className="py-3 px-5 lg:py-5 lg:px-[28px] m-20 border-2 rounded-md border-[#ADEFD1FF] hover:bg-gray-800">
+                <button type="submit" className="py-3 px-5 lg:py-5 lg:px-[28px] mt-10 mb-2 md:my-20 border-2 rounded-md border-[#ADEFD1FF] hover:bg-gray-800">
                   Send Message
                 </button>
               </div>
             </form>
-            {isSubmitted && <p className="text-center text-[#ADEFD1FF] pb-10 ">Thank you! Your message has been sent.</p>}
+            {isSubmitted && <p className="text-center text-xs md:text-sm text-[#A8B2D1] pb-10  ">Thank you! Your message has been sent.</p>}
           </div>
-        </AnimateInView>
+        
       </div>
     </section>
   );

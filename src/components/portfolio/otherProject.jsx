@@ -4,8 +4,8 @@ import AnimateInView from '../animate';
 
 const otherItems = [
   {
-    hrefLink:  '',
-    hrefGit: '',
+    hrefLink:  'https://kaddesh.github.io/country/',
+    hrefGit: 'https://github.com/Kaddesh/country',
     altText: 'country app',
     projectTitle: 'Country-Api ',
     description: 'The app integrates with the REST Countries API to pull and display country data. Users can see all countries on the homepage, search for a country using an input field, and filter countries by region. Clicking on a country reveals more detailed information on a separate page.',
