@@ -30,7 +30,7 @@ const Header = () => {
   
 
   return (
-    <section className="h-screen px-5 lg:pl-20">
+    <section className="h-screen px-10 lg:px-20">
       <header id="home" className="fixed top-0 left-0 w-[100vw] z-50 bg-black opacity-95 overflow-hidden">
         <div
           className={`flex flex-col md:flex-row items-center justify-center md:justify-between pt-3 pb-3 ${
@@ -127,7 +127,7 @@ const Header = () => {
       </div>
 
       <section id="section1" className="flex items-center justify-start h-screen">
-        <div className="flex flex-col ml-5 text-start md:pl-20">
+        <div className="flex flex-col text-start md:pl-20">
           <div className="space-y-4">
             <p className="text-2xl ">Hi, I'm</p>
             <h1 className="text-3xl text-wrap md:text-6xl  2xl:text-8xl">
@@ -143,7 +143,7 @@ const Header = () => {
           </div>
 
           <div className=" mt-5 " >
-           <p className="text-[#A8B2D1] text-base lg:text-lg">Creating flawless web experiences that captivate and leave lasting  impressions. <br /> Delivering pixel-perfect realities with unmatched expertise. Always developing <br /> web solutions like a boss.</p>
+           <p className="text-[#A8B2D1] text-base lg:text-lg">Creating flawless web experiences that captivate and leave lasting  impressions. <br className="hidden lg:block"/> Delivering pixel-perfect realities with unmatched expertise. Always developing <br className="hidden lg:visible"/> web solutions like a boss.</p>
           </div>
         </div>
       </section>
