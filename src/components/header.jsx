@@ -120,19 +120,17 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="hidden lg:block fixed right-10 ml-5 bottom-20 transform rotate-90 origin-bottom-right ">
-       
-          
+      <div className="hidden lg:block fixed right-10 mr-5 bottom-20 transform rotate-90 origin-bottom-right ">
           <a href="mailto:oludamolaijimade@gmail.com" className="text-[#A8B2D1]">
             oludamolaijimade@gmail.com
           </a>
-     
       </div>
 
       <section id="section1" className="flex items-center justify-start h-screen">
         <div className="flex flex-col ml-5 text-start md:pl-20">
-          <div className="">
-            <h1 className="text-3xl text-wrap md:text-6xl lg:text-8xl">
+          <div className="space-y-4">
+            <p className="text-2xl ">Hi, I'm</p>
+            <h1 className="text-3xl text-wrap md:text-6xl  2xl:text-8xl">
               O<span style={{ color: "#42EADDFF" }}>LU</span>DAMOLA
               <br />
               <span>

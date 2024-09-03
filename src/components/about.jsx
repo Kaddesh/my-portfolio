@@ -60,9 +60,6 @@ const About = () => {
                 <li className="about lg:text-lg ">
                   <FaChevronRight  /> <strong>Degree:</strong> <span>Master</span>
                 </li>
-                <li className="about lg:text-lg  ">
-                  <FaChevronRight className=" " /> <strong>Email:</strong> <span></span>
-                </li>
               </ul>
             </div>
           </div>

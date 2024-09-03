@@ -36,7 +36,7 @@ export default function Stack() {
 
                   <div className="col-lg-4">
                   <Progressbar skill="Firebase" value={95} color="#34495E" />
-                  <Progressbar skill="NodeJS" value={95} color="#1D8348"/>   
+                  <Progressbar skill="NodeJS" value={75} color="#1D8348"/>   
                   <Progressbar skill="MongoDB" value={90} color="#B7950B"/>
                   
                   </div>
