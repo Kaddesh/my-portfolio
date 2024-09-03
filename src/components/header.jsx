@@ -30,7 +30,7 @@ const Header = () => {
   
 
   return (
-    <section className="h-screen px-10 lg:px-20">
+    <section className="h-screen px-5 lg:px-20">
       <header id="home" className="fixed top-0 left-0 w-[100vw] z-50 bg-black opacity-95 overflow-hidden">
         <div
           className={`flex flex-col md:flex-row items-center justify-center md:justify-between pt-3 pb-3 ${
