@@ -25,18 +25,11 @@ const otherItems = [
     projectTitle: 'Quiz App',
     description: 'This project sharpened Javascript skill, a simple to-do App that allows users to manage their tasks efficiently. Users can add new tasks, and delete tasks they no longer need.',
   },
-  {
-    hrefLink:  'https://kaddesh.github.io/simple-calculator/',
-    hrefGit: 'https://github.com/Kaddesh/simple-calculator',
-    altText: 'calculator',
-    projectTitle: 'Calculator',
-    description: 'A simple calculator that helps you to do simplified calculation. It is efficient and has memory to save your precious activities.',
-  },
 ];
 
 export default function OtherProjects() {
   return (
-    <div className=' lg:mr-20 mt-20 lg:mt-0'>
+    <div className='mt-20 lg:mt-0 lg:max-w-[1200px] lg:mx-auto'>
       <h2 className='  text-2xl xl:text-3xl lg:text-center'>Also Check...</h2>
       <h3 className='text-[#ADEFD1FF] lg:text-center mt-6'>View Repository</h3>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 pt-10">

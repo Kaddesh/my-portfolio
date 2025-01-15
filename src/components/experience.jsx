@@ -30,7 +30,7 @@ export function Experience() {
   const buttons = ["Haven360-lab", "FrontEnd-Mentor"];
 
   return (
-    <section id="section3" className="flex flex-col gap-4 mt-40 lg:mt-60 mx-10 lg:mx-20 xl:ml-40 xl:mr-20">
+    <section id="section3" className="flex flex-col gap-4 mt-40 lg:mt-60 mx-10 lg:max-w-[1200px] lg:mx-auto">
       <AnimateInView >
         <h1 className='text-2xl xl:text-3xl lg:text-center '>Work Experience</h1>
       <div className="flex items-start lg:items-center lg:justify-center text-[#CCD6f6] gap-5 text-lg xl:text-xl   ">

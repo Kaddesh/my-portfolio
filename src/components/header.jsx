@@ -126,7 +126,7 @@ const Header = () => {
           </a>
       </div>
 
-      <section id="section1" className="flex items-center justify-start h-screen">
+      <section id="section1" className="flex items-center justify-start h-screen lg:mt-20">
         <div className="flex flex-col text-start md:pl-20">
           <div className="space-y-4">
             <p className="text-2xl ">Hi, I'm</p>

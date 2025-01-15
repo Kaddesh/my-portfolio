@@ -6,7 +6,7 @@ export default function Stack() {
   return (
     <section >
       <AnimateInView >
-       <div className=" mt-40 lg:mt-60 px-5 lg:pr-20">
+       <div className=" mt-40 lg:mt-60 px-5 lg:px-0 lg:max-w-[1200px] lg:mx-auto ">
                 <div className="text-start ">
                   <h1 className=' text-xl xl:text-3xl'> My Favourite Stacks</h1>
                 </div>
