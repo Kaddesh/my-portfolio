@@ -13,7 +13,7 @@ const portfolioItems = [
     description: 'An e-commerce website that dynamically display products with amazing animation. The website allows users to use light or dark mode with ease and show modal for ordering of products..',
   },
   {
-    hrefLink:  '',
+    hrefLink:  'https://www.smartparrot.ai/',
     hrefGit: '',
     imgSrc: '/my-portfolio/assets/parrot1.PNG',
     altText: 'parrotAi',

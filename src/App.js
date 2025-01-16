@@ -12,7 +12,7 @@ import FAQAccordion from './components/accordion/accordion'
 
 const App = () => {
   return (
-    <div className='text-white h-full max-w-[1440px] mx-auto '>
+    <div className='text-white h-full max-w-[1440px] mx-auto lg:px-20 '>
       <Header />
       <About />
       <Experience />

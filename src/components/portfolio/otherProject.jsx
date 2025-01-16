@@ -29,7 +29,7 @@ const otherItems = [
 
 export default function OtherProjects() {
   return (
-    <div className='mt-20 lg:mt-0 lg:max-w-[1200px] lg:mx-auto'>
+    <div className='mt-20 lg:mt-0 lg:max-w-[1100px] lg:mx-auto'>
       <h2 className='  text-2xl xl:text-3xl lg:text-center'>Also Check...</h2>
       <h3 className='text-[#ADEFD1FF] lg:text-center mt-6'>View Repository</h3>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 pt-10">

@@ -30,7 +30,7 @@ const Header = () => {
   
 
   return (
-    <section className="h-screen px-5 lg:px-20">
+    <section className="h-screen px-10 lg:px-20">
       <header id="home" className="fixed top-0 left-0 w-[100vw] z-50 bg-black opacity-95 overflow-hidden">
         <div
           className={`flex flex-col md:flex-row items-center justify-center md:justify-between pt-3 pb-3 ${
@@ -126,7 +126,7 @@ const Header = () => {
           </a>
       </div>
 
-      <section id="section1" className="flex items-center justify-start h-screen lg:mt-20">
+      <section id="section1" className="flex items-center justify-start h-screen">
         <div className="flex flex-col text-start md:pl-20">
           <div className="space-y-4">
             <p className="text-2xl ">Hi, I'm</p>

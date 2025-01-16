@@ -38,7 +38,7 @@ const FAQAccordion = () => {
   ];
 
   return (
-    <section id="section5" className="relative mt-40 mx-10 lg:ml-40 lg:mr-20">
+    <section id="section5" className="relative mt-40 mx-10">
       <AnimateInView>
       <h1 className=" text-2xl xl:text-3xl">Potential Questions Answered</h1>
       {faqs.map((faq, index) => (

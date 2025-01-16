@@ -38,17 +38,17 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-5 lg:justify-center lg:gap-6 md:ml-10 mt-20 text-[#CCD6f6]">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-5 lg:justify-center lg:gap-6 md:ml-10 lg:ml-0 mt-20 text-[#CCD6f6]">
             <div className="lg:pr-20">
               <ul className='space-y-5'>
                 <li className="about lg:text-lg ">
-                  <FaChevronRight  /> <strong>Birthday:</strong> <span>7 Jan</span>
+                  <FaChevronRight  /> <strong>Birthday:</strong> <span>7th Jan</span>
                 </li>
                 <li className="about lg:text-lg ">
                   <FaChevronRight  /> <strong>Website:</strong> <span>oludamolaiji.com</span>
                 </li>
                 <li className="about lg:text-lg ">
-                  <FaChevronRight  /> <strong>Phone:</strong> <span>+234-8068453717</span>
+                  <FaChevronRight  /> <strong>Phone:</strong> <span>+2348068453717</span>
                 </li>
               </ul>
             </div>
