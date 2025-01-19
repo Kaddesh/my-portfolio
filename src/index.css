@@ -172,6 +172,18 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.08) !important;
 }
 
+/* Hide scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+div::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+div {
+  scrollbar-width: none; /* Hides scrollbar */
+  ms-overflow-style: none; /* IE/Edge compatibility */
+}
+
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -184,6 +196,7 @@ input:-webkit-autofill:active {
 input {
   color: white;
 }
+
 
 @keyframes spiral-border {
   0% {
