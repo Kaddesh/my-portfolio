@@ -5,6 +5,12 @@ import AnimateInView from './animate';
 
 const content = [
   [
+    "Converted static design files into responsive, interactive web pages using html, CSS, and JavaScript",
+    "Enhanced website functionality and user experience by implementing responsive design techniques and optimizing for various devices",
+    "Refined and debugged code to ensure compatibility across different browsers and improve overall performance",
+    "Utilized git for version control, managing branches, commits, and collaborating on code reviews with peer"
+  ],
+  [
     "Developed robust and scalable frontend solutions using best practices in HTML, CSS, and JavaScript, focusing on performance optimization and user experience.",
     "Collaborated closely with cross-functional teams in code reviews and pair programming sessions to ensure code quality, consistency, and knowledge sharing.",
     "Troubleshooted and debugged frontend issues, employing systematic approaches to identify root causes and implement effective solutions.",
@@ -27,7 +33,7 @@ export function Experience() {
       };
 
 
-  const buttons = ["Haven360-lab", "FrontEnd-Mentor"];
+  const buttons = ["Fapss", "Haven360-lab", "FrontEnd-Mentor"];
 
   return (
     <section id="section3" className="flex flex-col gap-4 mt-40 lg:mt-60 mx-10 lg:max-w-[1200px] lg:mx-auto">
