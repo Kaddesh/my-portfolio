@@ -39,11 +39,11 @@ export function Experience() {
     <section id="section3" className="flex flex-col gap-4 mt-40 lg:mt-60 mx-10 lg:max-w-[1200px] lg:mx-auto">
       <AnimateInView >
         <h1 className='text-2xl xl:text-3xl lg:text-center '>Work Experience</h1>
-      <div className="flex items-start lg:items-center lg:justify-center text-[#CCD6f6] gap-5 text-lg xl:text-xl   ">
+      <div className="flex flex-nowrap items-start lg:items-center lg:justify-center text-[#CCD6f6] gap-5 text-lg xl:text-xl   ">
         {buttons.map((name, index) => (
           <button
             key={index}
-            className={` py-5 lg:py-10 w-1/2 rounded hover:bg-gray-900 cursor-pointer ${ openIndex === index ? "border-b-2 border-[#ADEFD1FF]" : ""}`}
+            className={`text-nowrap px-4 py-5 lg:py-10 w-1/2 rounded hover:bg-gray-900 cursor-pointer ${ openIndex === index ? "border-b-2 border-[#ADEFD1FF]" : ""}`}
             onClick={() => handleToggle(index)}
           >
             {name}
