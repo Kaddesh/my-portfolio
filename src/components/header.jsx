@@ -30,7 +30,7 @@ const Header = () => {
   
 
   return (
-    <section className="h-screen px-10 lg:px-20">
+    <section className="h-screen px-6 lg:px-20">
       <header id="home" className="fixed top-0 left-0 w-[100vw] z-50 bg-black opacity-95 overflow-hidden">
         <div
           className={`flex flex-col md:flex-row items-center justify-center md:justify-between pt-3 pb-3 ${
@@ -137,8 +137,8 @@ const Header = () => {
                 I<span style={{ color: "#42EADDFF" }}>JIMA</span>DE
               </span>
             </h1>
-            <h3 className="text-lg md:text-xl lg:text-4xl text-white pt-3">
-              <span className="rotate">A Digital Solutionist from Nigeria.</span>
+            <h3 className="text-2xl md:text-xl lg:text-4xl text-white pt-3">
+              <span className="rotate">A Digital Solutionist.</span>
             </h3>
           </div>
 

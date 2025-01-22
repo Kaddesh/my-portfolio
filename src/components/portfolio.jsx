@@ -40,7 +40,7 @@ const portfolioItems = [
 
 export default function Portfolio() {
   return (
-    <section id="section4" className="flex flex-col  mt-40 lg:mt-60 mx-10 lg:max-w-[1200px] lg:mx-auto ">
+    <section id="section4" className="flex flex-col  mt-40 lg:mt-60 mx-6 lg:max-w-[1200px] lg:mx-auto ">
       <h1 className=' text-2xl xl:text-3xl'>Check Some Projects</h1>
       <div className=''>
       {portfolioItems.map((item, index) => (

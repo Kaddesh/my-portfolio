@@ -5,10 +5,10 @@ import AnimateInView from './animate';
 
 const content = [
   [
-    "Converted static design files into responsive, interactive web pages using html, CSS, and JavaScript",
+    "Converted static design files into responsive, interactive web pages using HTML, CSS, and JavaScript",
     "Enhanced website functionality and user experience by implementing responsive design techniques and optimizing for various devices",
     "Refined and debugged code to ensure compatibility across different browsers and improve overall performance",
-    "Utilized git for version control, managing branches, commits, and collaborating on code reviews with peer"
+    "Utilized Git for version control, managing branches, commits, and collaborating on code reviews with peers"
   ],
   [
     "Developed robust and scalable frontend solutions using best practices in HTML, CSS, and JavaScript, focusing on performance optimization and user experience.",
@@ -22,48 +22,51 @@ const content = [
     "Successfully integrated performance optimizations, such as efficient code structures and responsive design principles, to enhance web application speed and user interaction.",
     "Collaborated in code reviews and pair programming sessions to refine coding practices and foster team collaboration, contributing to high-quality software delivery."
   ],
- 
 ];
 
 export function Experience() {
   const [openIndex, setOpenIndex] = useState(0);
-  
+
   const handleToggle = (index) => {
-        setOpenIndex(index)
-      };
+    setOpenIndex(index);
+  };
 
-
-  const buttons = ["Fapss", "Haven360-lab", "FrontEnd-Mentor"];
+  const buttons = ["Fapss", "Haven360-lab"];
 
   return (
-    <section id="section3" className="flex flex-col gap-4 mt-40 lg:mt-60 mx-10 lg:max-w-[1200px] lg:mx-auto">
-      <AnimateInView >
-        <h1 className='text-2xl xl:text-3xl lg:text-center '>Work Experience</h1>
-      <div className="flex flex-nowrap items-start lg:items-center lg:justify-center text-[#CCD6f6] gap-5 mt-6 text-lg xl:text-xl   " style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
-        {buttons.map((name, index) => (
-          <button
-            key={index}
-            className={`text-nowrap px-4 py-5 lg:py-10 w-1/2 rounded hover:bg-gray-900 cursor-pointer ${ openIndex === index ? "border-b-2 border-[#ADEFD1FF]" : ""}`}
-            onClick={() => handleToggle(index)}
-          >
-            {name}
-          </button>
-        ))}
-      </div>
-      {openIndex !== null && (
-        <Collapsible.Root open>
-          <Collapsible.Content>
-            <div className="mt-10 lg:mt-4  lg:p-4 text-xl items-start  ">
-              {content[openIndex].map((text, idx) => (
-                <p key={idx} className="flex text-start px-2  mb-5">
-                  <FaCaretRight className="mr-5 mt-2 text-[#ADEFD1FF]" />
-                  <span className='lg:text-base xl:text-lg text-[#afb6ce]'>{text}</span>
-                </p>
-              ))}
-            </div>
-          </Collapsible.Content>
-        </Collapsible.Root>
-      )}
+    <section id="section3" className="flex flex-col gap-4 mt-40 lg:mt-60 mx-6 lg:max-w-[1200px] lg:mx-auto">
+      <AnimateInView>
+        <h1 className="text-2xl xl:text-3xl lg:text-center">Work Experience</h1>
+        <div
+          className="flex overflow-x-auto items-start lg:items-center lg:justify-center text-[#CCD6f6] gap-5 mt-6 text-lg xl:text-xl scrollbar-hide"
+          style={{ WebkitOverflowScrolling: "touch" }}
+        >
+          {buttons.map((name, index) => (
+            <button
+              key={index}
+              className={`text-nowrap px-4 py-5 lg:py-10 w-1/2 rounded hover:bg-gray-900 cursor-pointer ${
+                openIndex === index ? "border-b-2 border-[#ADEFD1FF]" : ""
+              }`}
+              onClick={() => handleToggle(index)}
+            >
+              {name}
+            </button>
+          ))}
+        </div>
+        {openIndex !== null && (
+          <Collapsible.Root open>
+            <Collapsible.Content>
+              <div className="mt-10 lg:mt-4 lg:p-4 text-xl items-start">
+                {content[openIndex].map((text, idx) => (
+                  <p key={idx} className="flex text-start px-2 mb-5">
+                    <FaCaretRight className="mr-5 mt-2 text-[#ADEFD1FF]" />
+                    <span className="lg:text-base xl:text-lg text-[#afb6ce]">{text}</span>
+                  </p>
+                ))}
+              </div>
+            </Collapsible.Content>
+          </Collapsible.Root>
+        )}
       </AnimateInView>
     </section>
   );
