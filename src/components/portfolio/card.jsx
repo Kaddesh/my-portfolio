@@ -10,7 +10,7 @@ const Card = ({ item }) => {
       whileInView={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="block bg-[#162e48] py-8 px-10 w-full transition-transform duration-300 ease-in-out"
+      className="block bg-[#162e48] py-8 px-6 lg:px-10 w-full transition-transform duration-300 ease-in-out"
     >
       <div className='flex items-center justify-between'>
         <a href={item.hrefGit} ><FaGithub size={30} className=" text-[#ADEFD1FF]" /></a>
