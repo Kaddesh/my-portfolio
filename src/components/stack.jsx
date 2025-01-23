@@ -9,7 +9,7 @@ export default function Stack() {
        <div className=" mt-20 lg:mt-60 px-5 lg:px-0 lg:max-w-[1200px] lg:mx-auto ">
               
               
-            <h1 className=" text-lg xl:text-3xl font-bold lg:text-end lg:pr-80 lg:pl-10">My stacks</h1>
+            <h1 className=" text-lg xl:text-3xl font-bold">My stacks</h1>
             
 
                 <div className="grid lg:grid-cols-2 text-lg xl:text-3xl text-[#CCD6f6] gap-2 mt-8">
