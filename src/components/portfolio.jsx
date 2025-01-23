@@ -17,7 +17,7 @@ const portfolioItems = [
     hrefGit: '',
     imgSrc: '/assets/parrot1.PNG',
     altText: 'parrotAi',
-    projectTitle: ' Parrot',
+    projectTitle: 'Smartparrot',
     description: 'One app to manage all social content post, it helps you to generate ai prompt for all your social media content and helps you to schedule post, assign your post and also tract all your social media content on all social media platforms.',
   },
   {
@@ -41,7 +41,10 @@ const portfolioItems = [
 export default function Portfolio() {
   return (
     <section id="section4" className="flex flex-col  mt-40 lg:mt-60 mx-6 lg:max-w-[1200px] lg:mx-auto ">
-      <h1 className=' text-2xl xl:text-3xl'>Check Some Projects</h1>
+      <div className='flex gap-3'>
+              <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>03.</h3>
+            <h1 className=" text-lg xl:text-3xl font-bold lg:text-end lg:pr-80 lg:pl-10">Some Projects I've Built</h1>
+            </div>
       <div className=''>
       {portfolioItems.map((item, index) => (
         <ProjectCard

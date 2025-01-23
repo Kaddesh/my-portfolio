@@ -40,21 +40,24 @@ const FAQAccordion = () => {
   return (
     <section id="section5" className="relative mt-40 mx-6">
       <AnimateInView>
-      <h1 className=" text-2xl xl:text-3xl">Potential Questions Answered</h1>
+      <div className='flex gap-3'>
+              <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>01.</h3>
+            <h1 className=" text-lg xl:text-3xl font-bold lg:text-end lg:pr-80 lg:pl-10">Potential Questions</h1>
+            </div>
       {faqs.map((faq, index) => (
         <div key={index} className="relative mb-3 mt-10">
           <FaArrowsToDot className='text-[#ADEFD1FF] size-6 mb-5' />
           <div>
             <button
-              className={`w-full flex justify-between items-center text-white hover:bg-[black] lg:px-4 py-2 text-left hover:text-[#ADEFD1FF] ${expandedIndex === index ? 'shadow-lg' : ''}`}
+              className="w-full flex justify-between items-center text-white hover:bg-[#302f2f] px-4 py-2 text-left hover:text-[#ADEFD1FF]"
               onClick={() => handleChange(index)}
             >
-              <span className='lg:text-lg leading-9'>{faq.question}</span>
+              <span className='text-sm lg:text-base leading-9'>{faq.question}</span>
               <ChevronUpIcon className={`w-5 h-5 transform ${expandedIndex === index ? 'rotate-180' : ''}`} />
             </button>
             {expandedIndex === index && (
-              <div className="lg:px-40 pt-4 pb-2">
-                <p className='lg:text-lgl bg-[#ADEFD1FF] text-black px-5 leading-7'>{faq.answer}</p>
+              <div className="px-3 lg:px-40  pt-4 pb-2">
+                <p className='text-sm lg:text-base bg-[#ADEFD1FF] text-black px-3 leading-7'>{faq.answer}</p>
               </div>
             )}
           </div>

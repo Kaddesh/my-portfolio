@@ -34,9 +34,12 @@ export function Experience() {
   const buttons = ["Fapss", "Haven360-lab"];
 
   return (
-    <section id="section3" className="flex flex-col gap-4 mt-40 lg:mt-60 mx-6 lg:max-w-[1200px] lg:mx-auto">
+    <section id="section3" className="flex flex-col gap-4 mt-20 lg:mt-60 mx-6 lg:max-w-[1200px] lg:mx-auto">
       <AnimateInView>
-        <h1 className="text-2xl xl:text-3xl lg:text-center">Work Experience</h1>
+      <div className='flex gap-3'>
+              <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>02.</h3>
+            <h1 className=" text-lg xl:text-3xl font-bold lg:text-end lg:pr-80 lg:pl-10">Work experience</h1>
+            </div>
         <div
           className="flex overflow-x-auto items-start lg:items-center lg:justify-center text-[#CCD6f6] gap-5 mt-6 text-lg xl:text-xl scrollbar-hide"
           style={{ WebkitOverflowScrolling: "touch" }}
@@ -44,7 +47,7 @@ export function Experience() {
           {buttons.map((name, index) => (
             <button
               key={index}
-              className={`text-nowrap px-4 py-5 lg:py-10 w-1/2 rounded hover:bg-gray-900 cursor-pointer ${
+              className={`text-base lg:text-lg text-nowrap px-4 py-5 lg:py-10 w-1/2 rounded hover:bg-gray-900 cursor-pointer ${
                 openIndex === index ? "border-b-2 border-[#ADEFD1FF]" : ""
               }`}
               onClick={() => handleToggle(index)}
@@ -56,11 +59,11 @@ export function Experience() {
         {openIndex !== null && (
           <Collapsible.Root open>
             <Collapsible.Content>
-              <div className="mt-10 lg:mt-4 lg:p-4 text-xl items-start">
+              <div className="mt-10 lg:mt-4 lg:p-4 items-start">
                 {content[openIndex].map((text, idx) => (
                   <p key={idx} className="flex text-start px-2 mb-5">
                     <FaCaretRight className="mr-5 mt-2 text-[#ADEFD1FF]" />
-                    <span className="lg:text-base xl:text-lg text-[#afb6ce]">{text}</span>
+                    <span className="text-sm lg:text-base xl:text-lg text-[#afb6ce]">{text}</span>
                   </p>
                 ))}
               </div>

@@ -14,12 +14,12 @@ const ProjectCard = ({ item, reverse }) => {
         <div className="hidden lg:block h-[400px] w-[70%]  ">
           <img src={item.imgSrc} alt={item.altText} className={`object-cover h-full w-full opacity-60 hover:opacity-100`} />
         </div>
-        <div className={`lg:absolute flex flex-col  lg:w-[50%] space-y-3 ${reverse ? 'left-0  lg:mr-20 text-start' : 'right-0  lg:text-end items-end'}`}>
-          <h3 className='text-lg lg:text-2xl'> Featured Project</h3>
-          <h2 className='text-[#ADEFD1FF] text-2xl '>{item.projectTitle}</h2> 
+        <div className={`lg:absolute flex flex-col  lg:w-[50%] space-y-3 ${reverse ? 'lg:left-0  lg:mr-20 text-start' : 'lg:right-0  lg:text-end lg:items-end'}`}>
+          
+          <h2 className='text-[#ADEFD1FF] text-base lg:text-lg '>{item.projectTitle}</h2> 
             <div className='bg-[#162e48] rounded-md items-center px-8 sm:mx-10 py-6'>
            
-            <p className='lg:text-lg leading-7'>{item.description}</p>           
+            <p className='text-sm lg:text-base leading-7'>{item.description}</p>           
             </div>
 
             <div className='flex'>

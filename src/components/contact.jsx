@@ -59,9 +59,12 @@ export default function Contact() {
     <section id="section6" className=" mx-6 lg:mb-20 mt-40 lg:mt-60 text-[#A8B2D1]">
       <div className="lg:px-20">
         <AnimateInView initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <div className="flex flex-col lg:items-center lg:justify-between">
-            <h1 className='text-2xl xl:text-3xl '>Need more info?</h1>
-            <h1 className='text-xl xl:text-2xl mt-5 text-[#ADEFD1FF]'>Contact me!</h1>
+          <div className="flex flex-col items-center justify-between">
+          <div className='flex gap-3'>
+              <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>05.</h3>
+            <h1 className=" text-lg xl:text-3xl font-bold lg:text-end lg:pr-80 lg:pl-10">Want to know more?</h1>
+            </div>
+            <h1 className='text-xl xl:text-2xl mt-5 text-[#ADEFD1FF]'>Let's connect!</h1>
           </div>
         </AnimateInView>
 
@@ -72,7 +75,7 @@ export default function Contact() {
                 <FaLocationDot className="text-[#ADEFD1FF] hover:text-[#42EADDFF]"/>
               </div>
               <div className='block space-y-1 pl-5 text-2xl'>
-                <h3>My Address</h3>
+                <p>My Address</p>
                 <p className='text-sm'>17 Akobo Ibadan, Nigeria</p>
               </div>
             </div>
@@ -85,7 +88,7 @@ export default function Contact() {
                   <FaShareAlt className="text-[#ADEFD1FF] hover:text-[#42EADDFF]" />
                 </div>
                 <div className='block space-y-1 pl-5 text-2xl'>
-                  <h3>Social Profiles</h3>
+                  <p>Social Profiles</p>
                   <div className="flex gap-2 text-sm">
                   <a
               href="https://x.com/KKaddesh?t=HVQ50nIp6-NF94K9pQyW8g&s=09"
@@ -124,7 +127,7 @@ export default function Contact() {
                 <MdOutlineEmail className="text-[#ADEFD1FF] hover:text-[#42EADDFF]" />
               </div>
               <div className='block space-y-1 pl-5'>
-                <h3>Email Me</h3>
+                <p>Email Me</p>
                 <p className='text-sm'>oludamolaijimade@gmail.com</p>
               </div>
             </div>
@@ -136,7 +139,7 @@ export default function Contact() {
                 <FiPhoneCall className="text-[#ADEFD1FF] hover:text-[#42EADDFF]" />
               </div>
               <div className='block space-y-1 pl-5 text-2xl'>
-                <h3>Call Me</h3>
+                <p>Call Me</p>
                 <p className='text-sm'>+2348068453717</p>
               </div>
             </div>

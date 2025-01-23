@@ -13,12 +13,12 @@ const Card = ({ item }) => {
       className="block bg-[#162e48] py-8 px-6 lg:px-10 w-full transition-transform duration-300 ease-in-out"
     >
       <div className='flex items-center justify-between'>
-        <a href={item.hrefGit} ><FaGithub size={30} className=" text-[#ADEFD1FF]" /></a>
-        <a href={item.hrefLink}><FaLink size={30} className=" text-[#ADEFD1FF]" /></a>
+        <a href={item.hrefGit} ><FaGithub size={25} className=" text-[#ADEFD1FF]" /></a>
+        <a href={item.hrefLink}><FaLink size={25} className=" text-[#ADEFD1FF]" /></a>
       </div>
       <div className='md:h-64 mt-4'>
         <h3>{item.projectTitle}</h3>
-        <p className=' lg:text-base leading-7 text-[#afb6ce] mt-3'>{item.description}</p>
+        <p className='text-sm lg:text-base leading-7 text-[#afb6ce] mt-3'>{item.description}</p>
       </div>
       
     </motion.div>

@@ -30,8 +30,9 @@ const otherItems = [
 export default function OtherProjects() {
   return (
     <div className='mt-20 lg:mt-0 lg:max-w-[1100px] lg:mx-auto'>
-      <h2 className='  text-2xl xl:text-3xl lg:text-center'>Also Check...</h2>
-      <h3 className='text-[#ADEFD1FF] lg:text-center mt-6'>View Repository</h3>
+            <h1 className=" text-lg xl:text-3xl text-center font-bold lg:text-end lg:pr-80 lg:pl-10">Other noteworthy projects</h1>
+            <p className='text-center'><a href="https://github.com/kaddesh" target="_blank" rel="noopener noreferrer" className='text-sm lg:text-base text-[#ADEFD1FF]'>View Github Repos</a></p>
+
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 pt-10">
         {otherItems.map((item, index) => (
           <AnimateInView key={index}>
