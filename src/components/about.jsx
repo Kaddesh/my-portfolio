@@ -14,7 +14,7 @@ const About = () => {
             <h1 className=" text-lg xl:text-3xl font-bold lg:text-end lg:pr-80 lg:pl-10">Who Am I?</h1>
             </div>
             
-            <div className="grid  xl:grid-cols-2  pt-10 lg:pt-20 gap-10">
+            <div className="grid xl:grid-cols-2 justify-center  pt-10 lg:pt-20 gap-10">
 
               <div className="spiral-border lg:h-[450px] lg:w-[450px] order-2 xl:order-1 mx-auto xl:my-auto ">
               <img src="/assets/myProfimage.png" alt="Your Name" className="profile-image" />

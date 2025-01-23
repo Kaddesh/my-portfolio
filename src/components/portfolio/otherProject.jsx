@@ -30,7 +30,7 @@ const otherItems = [
 export default function OtherProjects() {
   return (
     <div className='mt-20 lg:mt-0 lg:max-w-[1100px] lg:mx-auto'>
-            <h1 className=" text-lg xl:text-3xl text-center font-bold lg:text-end lg:pr-80 lg:pl-10">Other noteworthy projects</h1>
+            <h1 className=" text-lg xl:text-3xl text-center font-bold">Other noteworthy projects</h1>
             <p className='text-center'><a href="https://github.com/kaddesh" target="_blank" rel="noopener noreferrer" className='text-sm lg:text-base text-[#ADEFD1FF]'>View Github Repos</a></p>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 pt-10">
