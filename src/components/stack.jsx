@@ -24,7 +24,7 @@ export default function Stack() {
                   <div className="">         
                   <Progressbar skill="ReactJS" value={95} color="#34495E" />
                   <Progressbar skill="NextJS" value={75} color="#1D8348"/>   
-                  <Progressbar skill="NodeJs" value={100} color="#B7950B"/>
+                  <Progressbar skill="NodeJs" value={70} color="#B7950B"/>
                   
                   </div>
 
