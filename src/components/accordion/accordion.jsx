@@ -38,10 +38,10 @@ const FAQAccordion = () => {
   ];
 
   return (
-    <section id="section5" className="relative mt-40 mx-6">
+    <section id="section5" className="relative mt-40 mx-6 lg:mx-0">
       <AnimateInView>
       <div className='flex gap-3'>
-              <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>01.</h3>
+              <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>04.</h3>
             <h1 className=" text-lg xl:text-3xl font-bold lg:text-end lg:pr-80 lg:pl-10">Potential Questions</h1>
             </div>
       {faqs.map((faq, index) => (
