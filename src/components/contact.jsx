@@ -148,7 +148,7 @@ export default function Contact() {
 
         
           <div className='bg-[rgba(255,255,255,0.08)] mt-10'>
-            <form className="lg:px-10" onSubmit={handleSubmit}>
+            <form className="lg:p-10" onSubmit={handleSubmit}>
               <div className="grid lg:grid-cols-2 w-full gap-2 lg:gap-10">
                 <div className="col-md-6 ">
                   
