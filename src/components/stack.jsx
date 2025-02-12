@@ -23,8 +23,8 @@ export default function Stack() {
 
                   <div className="">         
                   <Progressbar skill="ReactJS" value={95} color="#34495E" />
-                  <Progressbar skill="NextJS" value={75} color="#1D8348"/>   
-                  <Progressbar skill="NodeJs" value={70} color="#B7950B"/>
+                  <Progressbar skill="NextJS" value={95} color="#1D8348"/>   
+                  <Progressbar skill="NodeJs" value={90} color="#B7950B"/>
                   
                   </div>
 
@@ -37,7 +37,7 @@ export default function Stack() {
 
                   <div className="">
                   <Progressbar skill="Firebase" value={95} color="#34495E" />
-                  <Progressbar skill="GraphQL" value={75} color="#1D8348"/>   
+                  <Progressbar skill="GraphQL" value={80} color="#1D8348"/>   
                   <Progressbar skill="MongoDB" value={90} color="#B7950B"/>
                   
                   </div>

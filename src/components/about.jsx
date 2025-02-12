@@ -3,71 +3,43 @@ import { FaChevronRight } from 'react-icons/fa';
 import AnimateInView from './animate';
 import Stack from './stack';
 
-
 const About = () => {
   return (
-    <section id="section2" className=" lg:text-center  lg:mt-20 mx-6 lg:mx-0" data-section="about">
+    <section id="section2" className="lg:text-center lg:mt-20 mx-6 lg:mx-0" data-section="about">
       <AnimateInView initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-          <div >
-            <div className='flex gap-3'>
-              <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>01.</h3>
-            <h1 className=" text-lg xl:text-3xl font-bold lg:text-end">Who Am I?</h1>
+        <div>
+          <div className="flex gap-3">
+            <h3 className="text-[#42EADDFF] text-lg xl:text-3xl">01.</h3>
+            <h1 className="text-lg xl:text-3xl font-bold lg:text-end">Who Am I?</h1>
+          </div>
+
+          <div className="grid xl:grid-cols-2 justify-center pt-10 lg:pt-20 gap-10">
+            <div className="spiral-border lg:h-[450px] lg:w-[450px] order-2 xl:order-1 mx-auto xl:my-auto">
+              <img src="/assets/myProfimage.png" alt="Oludamola Ijimade" className="profile-image" />
             </div>
-            
-            <div className="grid xl:grid-cols-2 justify-center  pt-10 lg:pt-20 gap-10">
 
-              <div className="spiral-border lg:h-[450px] lg:w-[450px] order-2 xl:order-1 mx-auto xl:my-auto ">
-              <img src="/assets/myProfimage.png" alt="Your Name" className="profile-image" />
+            <div className="order-1 xl:order-2 text-start text-wrap space-y-5 lg:space-y-10 tracking-wider leading-8">
+              <div>
+                <span className="blurr">Introduction</span>
+                <p className="text-sm lg:text-base lg:max-w-xl">
+                  Hi, I'm <strong>Oludamola Ijimade</strong>, a frontend engineer who began his tech journey in 2022 after an inspiring experience with a friend. Witnessing the innovation happening around the world, I felt compelled to contribute, and today, I'm passionately building impactful digital experiences.
+                </p>
               </div>
-
-              <div className="order-1 xl:order-2 text-start text-wrap space-y-5 lg:space-y-10 tracking-wider leading-8">
-                <div>
-                  <span className="blurr">Introduction</span>
-                  <p className='text-sm lg:text-base lg:max-w-xl'>
-                    Hi I'm <strong>Oludamola Ijimade</strong> a frontend engineer who started his tech journey in 2022 after an amazing experience with a friend. I saw the innovation going on in the world and I got convinced that my contribution will be pivotal, so here I am today contributing immensely.
-                  </p>
-                </div>
-                <div>
-                  <span className="blurr">Approach</span>
-                  <p className=' text-sm lg:text-base lg:max-w-xl'>
-                    I innovate in the world through balancing technical prowess with a keen understanding of user experience. It is fun to say anytime that I love to build stuff. With the power of collaborative skill, architectural design, and understanding of stakeholders' needs I am swimming and having fun creating beautiful experiences in the world.
-                  </p>
-                </div>
-                <div>
-                  <span className="blurr">Expertise</span>
-                  <p className=' text-sm lg:text-base lg:max-w-xl'> 
-                    With an unwavering commitment to learning and growth, I thrives on challenges and embraces each project with enthusiasm. Combining technical expertise with a knack for empathetic design, I create digital solutions that empower and simplify.
-                  </p>
-                </div>
+              <div>
+                <span className="blurr">Approach</span>
+                <p className="text-sm lg:text-base lg:max-w-xl">
+                  I create digital experiences by balancing technical expertise with a deep understanding of user needs. I love building things that matter. By leveraging collaboration, architectural design, and a keen understanding of stakeholders’ needs, I craft solutions that are both functional and delightful.
+                </p>
+              </div>
+              <div>
+                <span className="blurr">Expertise</span>
+                <p className="text-sm lg:text-base lg:max-w-xl">
+                  With an unwavering commitment to learning and growth, I thrive on challenges and approach each project with enthusiasm. By blending technical proficiency with an eye for empathetic design, I develop digital solutions that simplify and empower users.
+                </p>
               </div>
             </div>
           </div>
-         {/* <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-5 lg:justify-center lg:gap-6 md:ml-10 lg:ml-0 mt-20 text-[#CCD6f6]">
-            <div className="lg:pr-20">
-              <ul className='space-y-5'>
-                <li className="about text-sm lg:text-base ">
-                  <FaChevronRight  /> <strong>Birthday:</strong> <span>7th Jan</span>
-                </li>
-                <li className="about text-sm lg:text-base ">
-                  <FaChevronRight  /> <strong>Website:</strong> <span>oludamolaiji.com</span>
-                </li>
-                <li className="about text-sm lg:text-base ">
-                  <FaChevronRight  /> <strong>Phone:</strong> <span>+2348068453717</span>
-                </li>
-              </ul>
-            </div>
-            <div className="lg:pl-20">
-              <ul className='space-y-5 '>
-                <li className="about text-sm lg:text-base ">
-                  <FaChevronRight  /> <strong>City:</strong> <span>Lagos, Nigeria</span>
-                </li>
-                <li className="about text-sm lg:text-base ">
-                  <FaChevronRight  /> <strong>Degree:</strong> <span>Master</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          */}
+        </div>
       </AnimateInView>
       <Stack />
     </section>

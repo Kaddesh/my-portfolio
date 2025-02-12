@@ -5,15 +5,18 @@ import Portfolio from './components/portfolio'
 import Contact from './components/contact'
 import Footer from './components/footer'
 import { Experience } from './components/experience'
-
 import FAQAccordion from './components/accordion/accordion'
+import Hero from './components/hero'
+import Social from './components/social'
 
 
 
 const App = () => {
   return (
-    <div className='text-white h-full max-w-[90rem] mx-auto lg:px-20 '>
+    <div className='text-white h-full max-w-[62.5rem] mx-auto'>
       <Header />
+      <Social />
+      <Hero />
       <About />
       <Experience />
       <Portfolio />
