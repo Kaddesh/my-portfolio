@@ -48,10 +48,10 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-screen bg-black opacity-95 z-50 px-6 md:px-20">
+    <header className="fixed top-0 left-0 w-screen bg-[#00203FFF] opacity-70 z-50 px-6 md:px-20">
       <div className="flex items-center justify-between py-3">
         {/* Stylish Logo */}
-        <div className="text-white text-xl font-bold tracking-wider bg-gradient-to-r from-[#42EADDFF] to-[#ADEFD1FF] text-transparent bg-clip-text">
+        <div className=" text-2xl font-bold tracking-wider px-4 bg-gradient-to-r from-[#42EADDFF] to-[#ADEFD1FF] text-transparent bg-clip-text">
           OI
         </div>
 
@@ -82,7 +82,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {navVisible && (
-        <nav className="md:hidden flex flex-col w-full h-screen items-center justify-center gap-10 py-4 bg-slate-900 rounded-sm opacity-100">
+        <nav className="md:hidden flex flex-col w-full h-screen items-center justify-center gap-10 py-4 bg-[#00203FFF] rounded-sm">
           {sections.map(({ id, label }) => (
             <a
               key={id}
@@ -95,7 +95,7 @@ const Header = () => {
               {label}
             </a>
           ))}
-          <a href="./assets/O_IJ..CV.pdf" download className="border px-6 py-2 border-[#42EADDFF] text-white">
+          <a href="./assets/O_IJ..CV.pdf" download className="border px-6 py-2 mt-10 border-[#42EADDFF] text-white">
             Resume
           </a>
         </nav>
