@@ -14,11 +14,20 @@ const PortfolioItems = [
     {
       hrefLink:  'https://www.smartparrot.ai/',
       hrefGit: '',
-      imgSrc: '/assets/parrot1.PNG',
+      imgSrc: '/assets/parrot3.PNG',
       mobileImgSrc: '/assets/smartparrot-mobile.PNG',
       altText: 'parrotAi',
       projectTitle: 'Smartparrot',
       description: 'One app to manage all social content post, it helps you to generate ai prompt for all your social media content and helps you to schedule post, assign your post and also tract all your social media content on all social media platforms.',
+    },
+    {
+      hrefLink:'https://taskye-kaddeshs-projects.vercel.app/',
+      hrefGit: 'https://github.com/Kaddesh/Taskye',
+      imgSrc: '/assets/taskyDesk.PNG',
+      mobileImgSrc: '/assets/taskyMobile.PNG',
+      altText: 'tasky',
+      projectTitle: 'Taskye',
+      description: 'A task management solution that helps you to schedule task. You can assign task, manage task as either completed or not and you can delete completed task with ease. Furthermore, this solution gives you the leverage to filter task based on assigned priority, due date and task category. Zustand was used for state management.',
     },
     {
       hrefLink:  'https://kaddesh.github.io/tracker/',

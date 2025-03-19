@@ -42,11 +42,11 @@ const ProjectCard = ({ item, reverse }) => {
         </div>
 
         {/* ✅ Desktop Image (No Changes) */}
-        <div className="hidden lg:block h-[400px] w-[70%]">
+        <div className="hidden lg:block h-[300px] w-[60%] rounded-md">
           <img
             src={item.imgSrc}
             alt={item.altText}
-            className="object-cover h-full w-full opacity-60 hover:opacity-100"
+            className="object-contain rounded-md h-full w-full opacity-60 hover:opacity-100"
           />
         </div>
 
