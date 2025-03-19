@@ -48,7 +48,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-black opacity-95 z-50 px-6 md:px-20">
+    <header className="fixed top-0 left-0 w-screen bg-black opacity-95 z-50 px-6 md:px-20">
       <div className="flex items-center justify-between py-3">
         {/* Stylish Logo */}
         <div className="text-white text-xl font-bold tracking-wider bg-gradient-to-r from-[#42EADDFF] to-[#ADEFD1FF] text-transparent bg-clip-text">
