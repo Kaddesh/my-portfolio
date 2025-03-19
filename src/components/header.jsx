@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
+
+const sections = [
+  { id: "section2", label: "About" },
+  { id: "section4", label: "Projects" },
+  { id: "section6", label: "Contact" },
+];
 
 const Header = () => {
   const [navVisible, setNavVisible] = useState(false);
+  const [activeSection, setActiveSection] = useState("section2");
 
   const toggleNav = () => {
     setNavVisible(!navVisible);
@@ -12,43 +19,88 @@ const Header = () => {
     const section = document.getElementById(id);
     const offset = 120;
     const top = section.getBoundingClientRect().top + window.pageYOffset - offset;
-  
-    window.scrollTo({
-       top: top,  behavior: "smooth"
-    });
+
+    window.scrollTo({ top: top, behavior: "smooth" });
+
+    setActiveSection(id); // Update active section on click
     if (window.innerWidth < 768) {
       setNavVisible(false);
     }
   };
-  
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let currentSection = "section2"; // Default active section
+      sections.forEach((section) => {
+        const element = document.getElementById(section.id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+            currentSection = section.id;
+          }
+        }
+      });
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <section className="px-6 lg:px-0">
-      <header id="home" className={` fixed top-0 left-0 w-[100vw] z-50 bg-black opacity-95 overflow-x-hidden md:px-20 ${
-            navVisible ? "border-b-2 border-white w-[100vw]" : ""
-          }`}>
-        <div
-          className="flex flex-col md:flex-row items-center justify-center md:justify-between pt-3 pb-3"
-        >
-          <button
-            id="open-button"
-            onClick={toggleNav}
-            className="text-white hover:text-black bg-none hover:bg-[#ADEFD1FF]"
-          >
-            <HiOutlineMenuAlt1 size={30} className="" />
-          </button>
-
-          <nav className={` ${navVisible ? "block" : "hidden"} transition-all duration-700`}>
-          <div className="flex flex-col md:flex-row gap-5 px-auto my-10 md:my-0 items-center lg:justify-end">
-            <a href="#about" onClick={() => scrollToSection("section2")}>About</a>
-            <a href="#portfolio" onClick={() => scrollToSection("section4")}>Projects</a>
-            <a href="#contact" onClick={() => scrollToSection("section6")}>Contact</a>
-            <a href="./assets/O_IJ..CV.pdf" download className="border px-6 py-4 border-[#42EADDFF]">Resume</a>
-          </div>
-          </nav>
+    <header className="fixed top-0 left-0 w-full bg-black opacity-95 z-50 px-6 md:px-20">
+      <div className="flex items-center justify-between py-3">
+        {/* Stylish Logo */}
+        <div className="text-white text-xl font-bold tracking-wider bg-gradient-to-r from-[#42EADDFF] to-[#ADEFD1FF] text-transparent bg-clip-text">
+          OI
         </div>
-      </header>
-    </section>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-5">
+          {sections.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              onClick={() => scrollToSection(id)}
+              className={`transition-colors text-sm duration-300 ${
+                activeSection === id ? "text-[#42EADDFF] font-semibold" : "hover:text-gray-400"
+              }`}
+            >
+              {label}
+            </a>
+          ))}
+          <a href="./assets/O_IJ..CV.pdf" download className="border text-sm px-6 py-2 border-[#42EADDFF] text-white">
+            Resume
+          </a>
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button onClick={toggleNav} className="text-white md:hidden">
+          <HiOutlineMenuAlt1 size={30} />
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      {navVisible && (
+        <nav className="md:hidden flex flex-col items-center gap-5 py-4 bg-black">
+          {sections.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              onClick={() => scrollToSection(id)}
+              className={`transition-colors duration-300 ${
+                activeSection === id ? "text-[#42EADDFF] font-semibold" : "hover:text-gray-400"
+              }`}
+            >
+              {label}
+            </a>
+          ))}
+          <a href="./assets/O_IJ..CV.pdf" download className="border px-6 py-2 border-[#42EADDFF] text-white">
+            Resume
+          </a>
+        </nav>
+      )}
+    </header>
   );
 };
 

@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <section
-      id="section1"
+      id="section2"
       className="flex items-center justify-start h-screen px-6 lg:px-0"
     >
       <div className="flex flex-col text-start md:pl-20">

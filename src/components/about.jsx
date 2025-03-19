@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaChevronRight } from 'react-icons/fa';
 import AnimateInView from './animate';
 import Stack from './stack';
 
