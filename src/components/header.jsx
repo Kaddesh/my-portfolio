@@ -82,7 +82,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {navVisible && (
-        <nav className="md:hidden flex flex-col items-center gap-5 py-4 bg-black">
+        <nav className="md:hidden flex flex-col w-screen h-screen items-center justify-center gap-10 py-4 bg-black">
           {sections.map(({ id, label }) => (
             <a
               key={id}
