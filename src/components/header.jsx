@@ -48,7 +48,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-screen bg-[#00203FFF] opacity-70 z-50 px-6 md:px-20">
+    <header className="fixed top-0 left-0 w-screen bg-[#0a1c29] z-50 px-2 md:px-20">
       <div className="flex items-center justify-between py-3">
         {/* Stylish Logo */}
         <div className=" text-2xl font-bold tracking-wider px-4 bg-gradient-to-r from-[#42EADDFF] to-[#ADEFD1FF] text-transparent bg-clip-text">
@@ -82,7 +82,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {navVisible && (
-        <nav className="md:hidden flex flex-col w-full h-screen items-center justify-center gap-10 py-4 bg-[#00203FFF] rounded-sm">
+        <nav className="md:hidden flex flex-col w-full h-screen items-center justify-center gap-10 py-4 bg-[#0a1623] rounded-sm">
           {sections.map(({ id, label }) => (
             <a
               key={id}
