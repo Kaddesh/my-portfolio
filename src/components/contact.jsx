@@ -76,7 +76,7 @@ export default function Contact() {
               </div>
               <div className='block space-y-1 pl-5 text-2xl'>
                 <p>My Address</p>
-                <p className='text-sm'>17 Akobo Ibadan, Nigeria</p>
+                <p className='text-sm'>7 Akobo Ibadan, Nigeria</p>
               </div>
             </div>
           </AnimateInView>
