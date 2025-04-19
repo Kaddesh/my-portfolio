@@ -15,7 +15,7 @@ export default function Portfolio() {
         <ProjectCard
           key={index}
           item={item}
-         
+          reverse={index % 2 !== 0}
           
         />
       ))}
