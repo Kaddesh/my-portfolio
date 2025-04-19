@@ -47,6 +47,15 @@ const PortfolioItems = [
       projectTitle: 'EasyBank',
       description: 'The app is a landing page that provides users with an optimal layout depending on their device screen size. It displays hover states for all interactive elements on the page.',
     },
+    {
+      hrefLink:'https://my-portfolio-red-zeta-15.vercel.app/',
+      hrefGit: 'https://github.com/Kaddesh/Recipe-Finder',
+      imgSrc: '/assets/recipe-share.PNG',
+      mobileImgSrc: '/assets/recipe-share.PNG',
+      altText: 'recipeApp',
+      projectTitle: 'RecipeFinder',
+      description: 'The app is a recipe finder that allows users to search for recipes by name or ingredient. It provides a list of recipes with images, names, and links to the recipe details. Users can also filter recipes by dietary restrictions and cuisine types.',
+    },
   ];
 
   export default PortfolioItems
