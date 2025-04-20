@@ -5,7 +5,7 @@ import PortfolioItems from '../data/portfolio';
 
 export default function Portfolio() {
   return (
-    <section id="section4" className="flex flex-col  mt-40 lg:mt-60 mx-6 lg:mx-0 ">
+    <section id="section4" className="flex flex-col  mt-40 lg:mt-60">
       <div className='flex gap-3'>
               <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>03.</h3>
             <h1 className=" text-lg xl:text-3xl font-bold lg:text-end lg:pr-80 lg:pl-10">Some Projects I've Built</h1>

@@ -13,8 +13,10 @@ import Social from './components/social'
 
 const App = () => {
   return (
-    <div className='text-white h-full max-w-[62.5rem] mx-auto'>
+   
+    <div className=' '>
       <Header />
+       <div className='lg:max-w-[62.5rem] mx-auto px-6 text-white h-full'>
       <Social />
       <Hero />
       <About />
@@ -23,6 +25,7 @@ const App = () => {
       <FAQAccordion />
       <Contact />
       <Footer />
+      </div>
     </div>
   )
 }

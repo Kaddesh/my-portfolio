@@ -4,7 +4,7 @@ import Stack from './stack';
 
 const About = () => {
   return (
-    <section id="section2" className="lg:text-center lg:mt-20 mx-6 lg:mx-0" data-section="about">
+    <section id="section2" className="lg:text-center lg:mt-20" data-section="about">
       <AnimateInView initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
         <div>
           <div className="flex gap-3">

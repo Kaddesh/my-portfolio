@@ -34,7 +34,7 @@ export function Experience() {
   const buttons = ["Fapss", "Haven360-lab"];
 
   return (
-    <section id="section3" className="flex flex-col gap-4 mt-20 lg:mt-60 mx-6 lg:mx-0">
+    <section id="section3" className="flex flex-col gap-4 mt-20 lg:mt-60">
       <AnimateInView>
       <div className='flex gap-3'>
               <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>02.</h3>

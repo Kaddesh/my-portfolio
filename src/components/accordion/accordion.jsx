@@ -38,7 +38,7 @@ const FAQAccordion = () => {
   ];
 
   return (
-    <section id="section5" className="relative mt-40 mx-6 lg:mx-0">
+    <section id="section5" className="relative mt-40">
       <AnimateInView>
       <div className='flex gap-3'>
               <h3 className='text-[#42EADDFF] text-lg xl:text-3xl'>04.</h3>

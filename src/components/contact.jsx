@@ -56,7 +56,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="section6" className=" mx-6 lg:mx-0 lg:mb-20 mt-40 lg:mt-60 text-[#A8B2D1]">
+    <section id="section6" className="lg:mb-20 mt-40 lg:mt-60 text-[#A8B2D1] w-auto">
       <div>
         <AnimateInView initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <div className="flex flex-col items-center justify-between">
