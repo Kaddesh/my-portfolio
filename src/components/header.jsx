@@ -75,7 +75,7 @@ const Header = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button onClick={toggleNav} className="text-white md:hidden">
+        <button onClick={toggleNav} className="text-white md:hidden hover:bg-black">
           <HiOutlineMenuAlt1 size={30} />
         </button>
       </div>
