@@ -30,6 +30,17 @@ const ProjectCard = ({ item, reverse }) => {
             <h2 className="text-white font-bold text-base lg:text-lg">{item.projectTitle}</h2>
             <p className="text-sm leading-7 text-white mt-6">{item.description}</p>
 
+            <div className="flex flex-wrap gap-2 mt-4">
+              {item.tools?.map((tool, index) => (
+                <span
+                  key={index}
+                  className="bg-[#ADEFD1FF] text-[#00203FFF] px-2 py-1 rounded text-xs font-semibold"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+
             <div className="flex mt-4">
               <a href={item.hrefGit}>
                 <FaGithub size={30} className="mr-10 text-[#ADEFD1FF]" />
@@ -59,9 +70,24 @@ const ProjectCard = ({ item, reverse }) => {
           }`}
         >
           <h2 className="text-[#ADEFD1FF] text-base lg:text-lg">{item.projectTitle}</h2>
-          <div className="bg-[#162e48] rounded-md items-center px-8 sm:mx-10 py-6">
+          <div className="bg-[#162e48] rounded-md items-center px-8 sm:mx-10 lg:mx-0 py-6">
             <p className="text-sm lg:text-base leading-7">{item.description}</p>
           </div>
+           {/* ✅ Tools (Desktop view) */}
+        <div
+              className={`flex flex-wrap gap-2 mt-4 ${
+                reverse ? "justify-start" : "justify-end"
+              }`}
+            >
+              {item.tools?.map((tool, index) => (
+                <span
+                  key={index}
+                  className="bg-[#ADEFD1FF] text-[#00203FFF] px-2 py-1 rounded text-xs font-semibold"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
 
           <div className="flex">
             <a href={item.hrefGit}>
@@ -72,6 +98,7 @@ const ProjectCard = ({ item, reverse }) => {
             </a>
           </div>
         </div>
+       
       </div>
     </AnimateInView>
   );
