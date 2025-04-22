@@ -73,7 +73,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-[#00203FFF]/60 backdrop-blur-md shadow-lg md:bg-[#0a1c29]/60 z-50 px-6 lg:px-20">
-      <div className="flex items-center justify-between py-3">
+      <div className="flex items-center justify-between py-6">
         <div className=" text-2xl font-bold tracking-wider bg-gradient-to-r from-[#42EADDFF] to-[#ADEFD1FF] text-transparent bg-clip-text">
           OI
         </div>
