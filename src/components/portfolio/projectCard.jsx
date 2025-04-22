@@ -28,7 +28,7 @@ const ProjectCard = ({ item, reverse }) => {
           {/* ✅ Dark Overlay for Readability */}
           <div className="bg-[#162e48] bg-opacity-95 p-6">
             <h2 className="text-white font-bold text-base lg:text-lg">{item.projectTitle}</h2>
-            <p className="text-sm leading-7 text-white mt-6">{item.description}</p>
+            <p className="text-sm leading-7 text-[#afb6ce] mt-6">{item.description}</p>
 
             <div className="flex flex-wrap gap-2 mt-4">
               {item.tools?.map((tool, index) => (
