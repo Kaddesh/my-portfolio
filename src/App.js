@@ -14,7 +14,7 @@ import Social from './components/social'
 const App = () => {
   return (
    
-    <div className=' '>
+    <div className='overflow-x-hidden '>
       <Header />
        <div className='lg:max-w-[62.5rem] mx-auto px-6 text-white h-full'>
       <Social />
