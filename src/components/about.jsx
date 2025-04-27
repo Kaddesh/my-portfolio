@@ -14,7 +14,7 @@ const About = () => {
 
           <div className="grid xl:grid-cols-2 justify-center pt-10 lg:pt-20 gap-10">
             <div className="spiral-border lg:h-[450px] lg:w-[450px] order-2 xl:order-1 mx-auto xl:my-auto">
-              <img src="/assets/myProfimage.png" alt="Oludamola Ijimade" className="profile-image" />
+              <img src="/assets/headshot2.png" alt="Oludamola Ijimade" className="profile-image p-2" />
             </div>
 
             <div className="order-1 xl:order-2 text-start text-wrap space-y-5 lg:space-y-10 tracking-wider leading-8">
